@@ -1,0 +1,24 @@
+body {
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, 
+    Verdana, sans-serif;
+}
+
+form {
+    width: 10px;
+    margin: 5px;
+    border-radius: 3px;
+    visibility: visible;
+    display: inline;
+}
+
+.block {
+    background-color: rgb(179, 150, 179);
+    padding: 5px;
+    text-align: center;
+}
+
+.body-color {
+    background-color: rgb(132, 170, 212);
+}
