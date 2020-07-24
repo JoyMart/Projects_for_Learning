@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Head -->
+	<head>
+		<meta charset="UTF-8">
+		<title> Joy Mart </title>
+		<link rel="stylesheet" type="text/css" href=".\sample_Portfolio.css">
+	</head>
+
+<!-- Body -->
+<body class="Background"> 
+
+<!-- Navbar -->
+	<div class="Navbar">
+		<a class="active" href="#Home">Home</a> 
+		<a href="#About">About</a>
+		<a href="#GitHub">GitHub</a>
+		<a href="#Contact">Contact</a>
+	</div>
+
+<!-- Home -->
+		<br> <!-- Breaks inserted to add space between navbar and first heading -->
+
+<!-- Video -->
+	<div id="Home">
+		<video autoplay muted loop id="Typing_Video"> <!-- Makes the video play automatically, on a loop and with no sound -->
+			<source src=".\typing_hands.mp4" type="video/mp4">
+			Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
+		</video>
+	</div>
+
+<!-- Video text --> 
+	<div class="Video_Text"> 
+		<h1 style="color:white;">Joy Mart's Portfolio</h1>
+			<p> 
+				<strong>
+					<center>
+						<q>Software is a great combination between artistry and engineering.
+							<br>When you finally get done and get to appreciate what you have done
+							<br>it is like a part of yourself that you`ve put together.
+						</q>	
+						<br>-Bill Gates<br>
+						<br>
+						My name is Joy Mart. Welcome to my portfolio website. On it, I will tell you about my background and experience.<br>
+						<br>Thank you for stopping by and enjoy! 
+					</center>	
+				</strong>
+			</p> 
+	</div>
+
+<!-- About section -->
+	<div class="Row" id="About"> 
+		<div class="Column_2"> <!-- Left column -->
+			<img src=".\coffee_laptop.jpg" alt="Laptop">
+		</div>
+  
+		<div class="Column_1"> <!-- Right column -->
+			<h1>About</h1>
+				<p>I am a software developer who loves to code! I enjoy spending time with my husband and puppy, drinking too much coffee, and traveling anytime I get the chance. <br>
+					<br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Python Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C#, Python and more. <br>
+					<br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!</p>
+		</div>
+	</div>
+
+<!-- GitHub section -->
+	<div class="Row" id="GitHub">
+		<div class="Column_1"> <!-- Left column -->
+			<h1>GitHub</h1>
+				<p>You can view my coding projects on my GitHub profile here:<br>
+				<center><a href="https://github.com/JoyMart" target="_blank"> Joy's GitHub</a></center></p>
+		</div>
+		
+		<div class="Column_2"> <!-- Right column -->
+			<img src=".\github_image.png" class="github"alt="GitHub">
+		</div>
+	</div>
+
+<!-- Contact section -->
+	<div class="Row" id="Contact"> 
+		<div class="Column_3"> <!-- Contact image, left column -->
+			<a href="https://github.com/JoyMart"><img src="./Contact.jpg" alt="Contact_Image"></a>
+		</div>
+	
+		<div class="Column_1"> <!-- Contact form, right "column" -->
+			<h1>Contact</h2> 
+				<form action="" method="get"> <!-- This specifies where to send the form data and how; it is left blank -->
+					<label>Name:</label>
+						<input type="text" placeholder="Please enter your name here">
+					<label>Email:</label>
+						<input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+					<label>Message:</label>
+						<input type="text" id="Message" name="Message" placeholder="Please write your message here">
+						<input type="submit" value="Submit">
+				</form>
+		</div>
+	</div>
+	
+<!-- Footer section -->
+	<footer>
+		<p>
+			<center>&copy Joy Mart   <a href="https://www.linkedin.com/in/joy-mart-55579514b/">linkedin profile</a> </center><br>
+		</p>
+	</footer>
+
+		</body>
+
+</html>

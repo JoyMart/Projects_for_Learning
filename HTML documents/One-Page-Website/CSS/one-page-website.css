@@ -1,3 +1,4 @@
+/*---------General Style--------*/
 body {
     font-size: 18px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 
@@ -6,19 +7,181 @@ body {
 }
 
 form {
-    width: 10px;
     margin: 5px;
     border-radius: 3px;
     visibility: visible;
     display: inline;
 }
+.body-color {
+    background-color: rgb(132, 170, 212);
+}
 
-.block {
+
+/*----------------Navigation Style---------------*/
+
+.navbar {
+    overflow: hidden;
+    background-color: rgb(179, 150, 179);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-weight: 600;
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    color: black;
+}
+.navbar a:hover{
+    background-color: rgb(132, 170, 212);
+    color: seashell;
+}
+
+.main {
+    margin-top: 50px;
+}
+
+
+/*--------Photo Style--------*/
+.position{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    outline: black line 5px;
+}
+
+.photo img{
+    border-radius: 30px;
+    filter: opacity(90%);
+    border-style: solid; 
+    border-color: black;
+}
+
+.photo img:hover{
+    filter: grayscale(100%);
+}
+
+.photo p{
+    text-align: center;
+}
+
+  /*------------------VIDEO STYLE----------------*/
+
+.video iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    outline: black double 5px;
+    align-items: center;
+}
+
+.video p:hover{
+    color: rgb(21, 85, 138);
+}
+
+.video p{
+    text-align: center;
+}
+
+
+
+
+
+
+/*-------Form Style------*/
+
+  .block {
     background-color: rgb(179, 150, 179);
     padding: 5px;
     text-align: center;
 }
 
-.body-color {
-    background-color: rgb(132, 170, 212);
+
+
+/*--------------------Table/Vacation----*/
+.table{
+    font-weight: 400;
+    font-size: 18px;
+    font-family: sans-serif;
+    padding-top: 20pt;
+    padding-bottom: 20pt;
+}
+
+.table th{
+    background-color: rgb(179, 150, 179);
+}
+.table td:hover{
+    background-color: rgb(180, 160, 180);
+}
+
+.column1{
+    float: left;
+    width: 50%;
+    color: black;
+    width: auto;
+    height: auto;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column2 {
+    float: right;
+    width: 25%;
+}
+
+.Pax {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .8s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .8s ease;
+    opacity: 0;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50% -50%);
+    -ms-transform: translate(-50% -50%);
+    text-align: center;
+}
+
+.column2:hover .Pax {
+    opacity: .3;
+}
+
+.column2:hover .middle{
+    opacity: 1;
+}
+
+.column2 p{
+    background-color: rgb(179, 150, 179);
+    color: rgb(21, 85, 138);
+    font-size: 14px;
+    text-align: center;
+}
+
+/*-------------FOOTER-----------------*/
+.border {
+    border: 10px black double;
+}
+
+.foot{
+    text-align: center;
+    font-weight: bold;
+}
+
+.tag{
+    background-color:rgb(21, 85, 138);
+    color:  rgb(132, 170, 212);
+    display: block;
 }

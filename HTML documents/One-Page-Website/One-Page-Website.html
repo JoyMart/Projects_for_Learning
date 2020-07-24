@@ -6,31 +6,76 @@
 		<link rel="stylesheet" href="./CSS/one-page-website.css">
 	</head>
 	<body class="body-color">
-	<div> <!-- Nav-->
-	<h2> <nav>Home</nav> </h2>
-	</div>
-		<div>
+
+	<!-- Nav-->
+	<div class="navbar">
+		<a href="#home">Home</a>
+		<a href="#about">About</a>
+		<a href="#contact">Contact Me!</a>
+	</div>	
+ <!-- End Nav-->
+
+
+	<div class="main">
 		<!-- photo -->
-			<div>
-				<p> This is the contents of my website. <br>
+			<div class="photo">
 				<img src = "C:\Users\joybe\Pictures\Camera Roll\profilepic.jpg" 
-				width ="500" height ="500"> <br>
-				This is a recent picture of me!
-				</p>
+				width ="500" height ="500" alt="pic of me!" class="position">
+				<p>This is a recent picture of me!</p>
 			</div>
 		<!-- end photo-->
 		
 		<!-- video-->
-			<div>
-				<p> This is the contents of my website. <br>
+			<div class="video">
+				<br>
 				<iframe width="560" height="315" 
 				src="https://www.youtube.com/embed/DWcJFNfaw9c" 
 				frameborder="0" allow="accelerometer; autoplay; encrypted-media; 
 				gyroscope; picture-in-picture" allowfullscreen></iframe> <br>
-				This is a Youtube channel I love!
+				<p>
+					This is a Youtube channel I love!
 				</p>
 			</div>
 		<!-- end video -->
+
+		<!----Second Video-->
+
+
+
+		<!--table-->
+	<div class="row">
+		<div class="column1">
+			<table style="width: 100%;" class="table">
+				<tr>
+					<th>Places I Want to Vacation</th>
+					<th>Best Time to Go</th>
+					<th>Travel Type</th>
+				</tr>
+				<tr>
+					<td>San Diego</td>
+					<td>Springtime(March-May)</td>
+					<td>Airplane, Hotel or Camp Ground</td>
+				</tr>
+				<tr>
+					<td>New York City</td>
+					<td>New Years Week</td>
+					<td>Drive, air-b-n-b</td>
+				</tr>				
+				<tr>
+					<td>Colorado Springs</td>
+					<td>Fall, foliage change</td>
+					<td>Drive, air-b-n-b</td>
+				</tr>
+			</table>
+		</div>
+		<div class="column2">
+			<img src="..\Picture_of_Pax_cropped.jpg"
+			 alt="my doggo" width="50%" height="50%" class="Pax">
+			 	<div class="middle">
+					<p> This is my precious dog, Paxton.</p>
+				</div>
+		</div>
+		</div>
 		
 		<!-- contact -->
 		<div class="block">
@@ -51,7 +96,8 @@
 	</body>
 <!--footer-->
 
-	<footer>
+	<footer class="foot">
+		<a href="http://www.instagram.com/joy__joy__" target="_blank"><span  class="tag">My Instagram Link</span></a>
 		<p> <b> &copy; 2020 <b> Joy Mart </p> <br> <br>
 	</footer>
 <!-- end footer-->
