@@ -141,6 +141,17 @@
         </div>
             <!--- /Showtimes --->
 
+<!-------- jumbotron heading ---------->
+<div class="jumbotron jumbotron-fluid bg-info not-5 text-center">
+  <div class="container">
+    <h1 class="display-4 hidden-xm-down" style="color: #fff; font-family: roboto;font-weight: 900; text-transform: uppercase;">Movie Deals</h1>
+    <p class="lead">Check out our monthly deals...</p>
+    <!--movie deals-->
+    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#register">See our monthly movie deals!</button>
+    <!--/movie deals-->
+  </div>
+</div>
+<!-------/jumbotron heading----------->
 
            <!--Deals section-->
         <div id="deals" class="text-center">
@@ -150,11 +161,56 @@
                 <div class="form-group">
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                 </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="button" class="btn btn-secondary btn-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Submit your email to recieve great movie rewards!">
+                 Sign up
+                </button>
             </form>
           </div>
         </div>
             <!--/Deals section-->
+
+<!--form model-->
+<div class="modal fade" id="register">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Register to recieve movie deals.</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <form>
+          <fieldset class="form-group">
+            <label for="formGroupExampleInput">First name:</label>
+            <input type="text" class="form-control" id="firstname" placeholder="ex.Jane">
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="formGroupExampleInput">Last name:</label>
+            <input type="text" class="form-control" id="lastname" placeholder="ex. Doe">
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="formGroupExampleInput">Email:</label>
+            <input type="text" class="form-control" id="email" placeholder="janedoe@example.com">
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="formGroupExampleInput">Password:</label>
+            <input type="text" class="form-control" id="password" placeholder="use numbers, symbols, and letters">
+          </fieldset>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--/form model-->
+
 
           <div class="container my-5">
             <ul class="nav nav-inline">
@@ -183,5 +239,16 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  
+  <script>
+      $('.popover-dismiss').popover({
+        trigger: 'focus'
+        })
+  </script>
+
+  </body>
   </body>
 </html>
