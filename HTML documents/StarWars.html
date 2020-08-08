@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Joy's StarWars Info</title>
+</head>
+<body>
+    <p id="SW"></p>
+    <p id="SW2"></p>
+    <p id="name"></p>
+
+<script>
+    var starwars = {"character":"Han Solo", "species":"human", "age":52};
+    var stringJSON = JSON.stringify(starwars);
+    document.getElementById("SW").innerHTML = stringJSON;
+
+    var obj = JSON.parse('{"character":"Han Solo", "species":"human", "age":52}');
+    document.getElementById("SW2").innerHTML = obj.character + " is a "
+    + obj.species + " in the StarWars Universe!";
+
+    localStorage.setItem("character", "Han Solo");
+    document.getElementById("name").innerHTML= localStorage.getItem("character");
+</script>
+</body>
+</html>

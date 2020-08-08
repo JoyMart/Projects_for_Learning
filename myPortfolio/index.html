@@ -4,28 +4,32 @@
 <!-- Head -->
 	<head>
 		<meta charset="UTF-8">
-		<title> Joy Mart </title>
-		<link rel="stylesheet" type="text/css" href=".\sample_Portfolio.css">
+		<title>Joy Mart </title>
+          <link rel="stylesheet" type="text/css" href="portfolio.css">
+          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 	</head>
+		  
 
 <!-- Body -->
 <body class="Background"> 
 
 <!-- Navbar -->
 	<div class="Navbar">
-		<a class="active" href="#Home">Home</a> 
+		<a class="active" href="#Home" style="color: black;">Home</a> 
+		<a href="#Slideshow">Slideshow</a> <!-- This is a new section -->
 		<a href="#About">About</a>
-		<a href="#GitHub">GitHub</a>
-		<a href="#Contact">Contact</a>
+        <a href="#GitHub">GitHub</a>
+		<a onclick="openForm()" ondblclick="closeForm()">Contact</a> <!-- This makes it so that our openForm function runs when we click Contact on the nav bar -->
 	</div>
 
 <!-- Home -->
-		<br> <!-- Breaks inserted to add space between navbar and first heading -->
-
-<!-- Video -->
 	<div id="Home">
+		<br> <!-- Breaks inserted to add space between navbar and first heading -->
+		<br>
+		
+<!-- Video -->
 		<video autoplay muted loop id="Typing_Video"> <!-- Makes the video play automatically, on a loop and with no sound -->
-			<source src=".\typing_hands.mp4" type="video/mp4">
+			<source src="typing_hands.mp4" type="video/mp4">
 			Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
 		</video>
 	</div>
@@ -34,75 +38,142 @@
 	<div class="Video_Text"> 
 		<h1 style="color:white;">Joy Mart's Portfolio</h1>
 			<p> 
-				<strong>
+			  <strong>
 					<center>
 						<q>Software is a great combination between artistry and engineering.
 							<br>When you finally get done and get to appreciate what you have done
-							<br>it is like a part of yourself that you`ve put together.
+							<br>it is like a part of yourself that you've put together.
 						</q>	
 						<br>-Bill Gates<br>
 						<br>
-						My name is Joy Mart. Welcome to my portfolio website. On it, I will tell you about my background and experience.<br>
+						My name is Joy Mart. Welcome to my portfolio website. <br>
+						On it, I will tell you about my background and experience.<br>
 						<br>Thank you for stopping by and enjoy! 
 					</center>	
-				</strong>
+			  </strong>				
 			</p> 
 	</div>
 
+<!-- Slideshow section -->
+  <div id="Slideshow">
+    <div id="Slideshow_Background"> 
+      <div id="Slideshow_Container">
+        
+		<div class="mySlides fade">
+          <div class="Slide_Number">1 / 6</div>
+            <img class="Slide_Show_Images" src="profilepic.jpg" style="width:100%" style ='height: auto'>
+              <div class="text">I'm a full-stack, junior developer!</div>
+        </div>
+        
+		<div class="mySlides fade">
+          <div class="Slide_Number">2 / 6</div>
+            <img class="Slide_Show_Images" src="web_dev.png" style="width:100%" style ='height: auto'>
+              <div class="text">I am trained in:<br>HTML, CSS, and JavaScript.</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="Slide_Number">3 / 6</div>
+              <img class="Slide_Show_Images" src="Python-Logo.jpg" style="width:100%" style ='height: auto'>
+                <div class="text"> I have training in Python, </div>
+          </div>
+
+        <div class="mySlides fade">
+          <div class="Slide_Number">4 / 6</div>
+            <img class="Slide_Show_Images" src="sql.jpg" style="width:100%"style ='height: auto'>
+              <div class="text">SQL, and back end development. </div>
+        </div>
+
+		<div class="mySlides fade">
+	      <div class="Slide_Number">5 / 6</div>
+			<img class="Slide_Show_Images" src="full-stack.jpg" style="width:100%" style ='height: auto'>
+              <div class="text">I can work in all areas of web development.</div>
+			</div>
+
+		<div class="mySlides fade">
+		  <div class="Slide_Number">6 / 6</div>
+			<img class="Slide_Show_Images" src="Contact.jpg" style="width:100%" style ='height: auto'>
+			  <div class="text"> 
+				<a onclick="openForm()" href="#Contact" style="color:white;">Contact me now!</a>
+			  </div>
+	    </div>
+	
+		  <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+		
+	  </div>
+  <br>
+
+      <div style="text-align:center">
+ 
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span> 
+		<span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot" onclick="currentSlide(5)"></span> 
+        <span class="dot" onclick="currentSlide(6)"></span>
+
+      </div>
+    </div>
+  </div>
+
+
+
 <!-- About section -->
-	<div class="Row" id="About"> 
-		<div class="Column_2"> <!-- Left column -->
-			<img src=".\coffee_laptop.jpg" alt="Laptop">
-		</div>
-  
-		<div class="Column_1"> <!-- Right column -->
-			<h1>About</h1>
-				<p>I am a software developer who loves to code! I enjoy spending time with my husband and puppy, drinking too much coffee, and traveling anytime I get the chance. <br>
-					<br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Python Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C#, Python and more. <br>
-					<br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!</p>
-		</div>
+  <div class="Row" id="About"> 
+	<div class="Column_2"> <!-- Left column -->
+	  <img src="coffee_laptop.jpg" alt="Laptop">
 	</div>
+  
+	<div class="Column_1"> <!-- Right column -->
+	  <h1>About</h2>
+	    <p>I am a software developer who loves to code! I enjoy spending time with my husband and puppy, drinking too much coffee, and traveling anytime I get the chance. <br>
+            <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Python Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C#, Python and more. <br>
+            <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!</p>
+	</div>
+  </div>
 
 <!-- GitHub section -->
 	<div class="Row" id="GitHub">
 		<div class="Column_1"> <!-- Left column -->
 			<h1>GitHub</h1>
-				<p>You can view my coding projects on my GitHub profile here:<br>
+            <p>You can view my coding projects on my GitHub profile here:<br>
 				<center><a href="https://github.com/JoyMart" target="_blank"> Joy's GitHub</a></center></p>
 		</div>
 		
 		<div class="Column_2"> <!-- Right column -->
-			<img src=".\github_image.png" class="github"alt="GitHub">
+			<a href="https://github.com/JoyMart" target="_blank"><img src="github_image.png" alt="GitHub"></a>
 		</div>
 	</div>
+</div>
 
 <!-- Contact section -->
-	<div class="Row" id="Contact"> 
-		<div class="Column_3"> <!-- Contact image, left column -->
-			<a href="https://github.com/JoyMart"><img src="./Contact.jpg" alt="Contact_Image"></a>
-		</div>
+  <div id="Contact"> 
+    <button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
+	  <div class="form-popup" id="myForm">
+	    <form action="https://formspree.io/joybellsmart@gmail.com" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+		<h1>Contact</h1>
+			<label for="name"><b>Name</b></label>
+			  <input type="text" placeholder="Type your name here" name="name" required>
+			<label for="phone"><b>Phone</b></label>
+			  <input type="text" placeholder="Enter your phone number here" name="phone">
+			<label for="email"><b>Email</b></label>		
+			  <input type="text" placeholder="Type your email address here" name="email" required>
+			<label for="message"><b>Message</b></label>
+			  <input type="text" placeholder="Type your message here" name="message">
+ 
+    <button type="submit" class="btn">SUBMIT</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+	    </form>
+	  </div>
+  </div>
 	
-		<div class="Column_1"> <!-- Contact form, right "column" -->
-			<h1>Contact</h2> 
-				<form action="" method="get"> <!-- This specifies where to send the form data and how; it is left blank -->
-					<label>Name:</label>
-						<input type="text" placeholder="Please enter your name here">
-					<label>Email:</label>
-						<input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-					<label>Message:</label>
-						<input type="text" id="Message" name="Message" placeholder="Please write your message here">
-						<input type="submit" value="Submit">
-				</form>
-		</div>
-	</div>
-	
-<!-- Footer section -->
+<!-- Footer section -->	
 	<footer>
-		<p>
-			<center>&copy Joy Mart   <a href="https://www.linkedin.com/in/joy-mart-55579514b/">linkedin profile</a> </center><br>
-		</p>
+	  <p>
+	    <center>Joy Mart<a href="https://www.linkedin.com/in/joy-mart-55579514b/" target="_blank"><img src="linkedin.png" alt="LinkedIn" style="width: 20px;"></a></center><br>
+      </p>
 	</footer>
 
-		</body>
-
+    <script src="portfolio.js"></script>
+</body>
 </html>
